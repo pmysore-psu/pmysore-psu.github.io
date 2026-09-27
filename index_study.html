@@ -177,8 +177,8 @@
                 cell.title = `${dateStr}: ${minutes} mins studied`;
 
                 if (minutes === 0) cell.classList.add('bg-gray-300');
-                else if (minutes < 30) cell.classList.add('bg-blue-300');
-                else if (minutes < 90) cell.classList.add('bg-blue-500');
+                else if (minutes < 90) cell.classList.add('bg-blue-300');
+                else if (minutes < 120) cell.classList.add('bg-blue-500');
                 else cell.classList.add('bg-[cornflowerblue]');
 
                 grid.appendChild(cell);

@@ -50,8 +50,8 @@
                 cell.title = `${dateStr}: ${minutes} mins`;
 
                 if (minutes === 0) cell.classList.add('bg-slate-800');
-                else if (minutes < 30) cell.classList.add('bg-indigo-950');
-                else if (minutes < 90) cell.classList.add('bg-indigo-700');
+                else if (minutes < 90) cell.classList.add('bg-indigo-950');
+                else if (minutes < 120) cell.classList.add('bg-indigo-700');
                 else cell.classList.add('bg-indigo-500');
 
                 grid.appendChild(cell);
