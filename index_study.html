@@ -149,7 +149,7 @@
             const minutesStudied = Math.round(secondsElapsed / 60);
             
             if (minutesStudied > 0) {
-                const todayStr = new Date().toISOString().split('T')[0];
+                const todayStr = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
                 dailyData[todayStr] = (dailyData[todayStr] || 0) + minutesStudied;
                 
                 renderHeatmap();
